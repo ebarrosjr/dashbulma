@@ -9,6 +9,7 @@ const imagemin = require('gulp-imagemin');
 // Compile SASS
 gulp.task('sass', gulp.parallel(() => {
     return gulp.src([
+        'node_modules/bulma/bulma.sass',
         'src/scss/*.scss'
     ])
     .pipe(Sass())
