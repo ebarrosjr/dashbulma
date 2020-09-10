@@ -21,9 +21,9 @@ gulp.task('concat', gulp.series(() => {
     return gulp.src('src/css/*.css')
                .pipe(concatCss('dashboard.css'))
                .pipe(clearCss({compatibility: 'ie8'}))
-               //.pipe(unCss({
-               //    html: ['src/*.html']
-               //}))
+               .pipe(unCss({
+                   html: ['src/*.html']
+               }))
                .pipe(gulp.dest('dist/css/'));
 }));
 // Move JS files
