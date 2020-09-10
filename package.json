@@ -1,0 +1,35 @@
+{
+  "name": "dashbulma",
+  "version": "1.0.0",
+  "description": "A admin dashboard Bulma Framework based",
+  "main": "index.html",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.14.0",
+    "bulma": "^0.9.0",
+    "gulp": "^4.0.2"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "gulp-clean-css": "^4.2.0",
+    "gulp-cli": "^2.2.0",
+    "gulp-concat-css": "^3.1.0",
+    "gulp-imagemin": "^6.1.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-uncss": "^1.0.6"
+  },
+  "scripts": {
+    "start": "gulp",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ebarrosjr/dashbulma.git"
+  },
+  "keywords": [],
+  "author": "@ebarrosjr",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ebarrosjr/dashbulma/issues"
+  },
+  "homepage": "https://github.com/ebarrosjr/dashbulma#readme"
+}
