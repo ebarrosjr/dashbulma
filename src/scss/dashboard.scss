@@ -11,6 +11,84 @@ $lightgray: #b7b7a4;
 $ice: #f1faee;
 
 /* STYLES */
-header{
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+body{
+    font-size: 1.6rem Helvetica;
+    height: 100vh;
+    margin: 0;
+}
+.grid-container{
+    display: grid;
+    grid-template-areas: "header" "main" "footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: 5rem 1fr 5rem;
+    height: 100%;
+}
+.header{
     background-color: $primary;
+    grid-area: header;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    a{
+        color: $ice;
+        font-size: 1.5rem;
+        text-decoration: none;
+    }
+    .brand{
+        display: flex;
+        align-items: center;
+        button{
+            font-size: 3rem;
+            padding: .5rem;
+            background: none;
+            color: $ice;
+            border: none;
+        }
+        a{
+            font-size: 2.5rem;
+        }
+    }
+}
+.sidebar{
+    position: fixed;
+    transform: translateX(-20rem);
+    width:20rem;
+    background-color: $primary;
+    color: $ice;
+    height: 100%;
+    transition: all 0.5s;
+    &.open{
+        box-shadow: 2px 5px 5px #071e299c;
+        transform: translateX(0);
+    }
+    .sidebar-close{
+        position: absolute;
+        right: 5px;
+        top: 5px;
+        background-color: transparent;
+        color: #fff;
+        border: 0.5px solid #fff;
+        border-radius: 15px;
+        padding: 1px 6px 3px;   
+        text-decoration: none;
+        &:focus{
+            outline: unset;
+        }     
+    }
+}
+.main{
+    grid-area: main;
+}
+.footer{
+    padding: 0;
+    grid-area: footer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $darkgray;
+    color: $ice;
 }
