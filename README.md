@@ -11,3 +11,5 @@
 If you use this template, I'll be glad if you notify me about your site, just tweeting by @ebarrosjr. This will help the community to grow and make better this tamplate!
 
 Thanks for use!
+
+Licensed under the [MIT License](LICENSE).
