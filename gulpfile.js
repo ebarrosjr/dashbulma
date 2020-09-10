@@ -3,7 +3,7 @@ const browserSync = require('browser-sync');
 const Sass = require('gulp-sass');
 const concatCss = require('gulp-concat-css');
 const clearCss = require('gulp-clean-css');
-const unCss = require('gulp-uncss');
+// const unCss = require('gulp-uncss');
 const imagemin = require('gulp-imagemin');
 
 // Compile SASS
@@ -21,9 +21,11 @@ gulp.task('concat', gulp.series(() => {
     return gulp.src('src/css/*.css')
                .pipe(concatCss('style.css'))
                .pipe(clearCss({compatibility: 'ie8'}))
+               /*
                .pipe(unCss({
                    html: ['src/*.html']
                }))
+               */
                .pipe(gulp.dest('dist/css/'));
 }));
 // Move JS files
@@ -42,7 +44,14 @@ gulp.task('html', gulp.parallel(() => {
 gulp.task('img', gulp.parallel(() => {
     return gulp.src(['src/img/*']).pipe(imagemin()).pipe(gulp.dest(['dist/img']));
 }));
+// FontAwesome
+gulp.task('fa', gulp.parallel(() => {
+    return gulp.src(['node_modules/@fortawesome/fontawesome-free/css/all.min.css']).pipe(gulp.dest(['src/css']));
+}));
 
+gulp.task('fa-fonts', gulp.parallel(() => {
+    return gulp.src(['node_modules/@fortawesome/fontawesome-free/webfonts/*']).pipe(gulp.dest(['dist/webfonts']));
+}));
 // Server watch
 gulp.task('serve', gulp.parallel( () => {
     browserSync.init({
@@ -61,4 +70,4 @@ gulp.task('serve', gulp.parallel( () => {
     gulp.watch('src/scss/**/*.scss').on('change', browserSync.reload);
 }));
 
-gulp.task('default', gulp.series('sass', gulp.parallel('concat', 'js', 'html', 'img', 'serve')));
+gulp.task('default', gulp.series('sass', gulp.parallel('concat', 'js', 'html', 'img', 'fa', 'fa-fonts', 'serve')));

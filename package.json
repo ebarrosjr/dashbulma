@@ -4,6 +4,7 @@
   "description": "A admin dashboard Bulma Framework based",
   "main": "index.html",
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.14.0",
     "bulma": "^0.9.0",
     "gulp": "^4.0.2"
   },
