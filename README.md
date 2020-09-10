@@ -12,4 +12,5 @@ If you use this template, I'll be glad if you notify me about your site, just tw
 
 Thanks for use!
 
+# License
 Licensed under the [MIT License](LICENSE).
