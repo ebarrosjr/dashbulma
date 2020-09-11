@@ -118,6 +118,7 @@ body{
     background-color: $primary;
     color: $ice;
     height: 100%;
+    z-index: 999;
     transition: all 0.5s;
     &.open{
         box-shadow: 2px 5px 5px #071e299c;
@@ -175,6 +176,56 @@ body{
 }
 .main{
     grid-area: main;
+    margin: 1.5rem;
+    h3{
+        font-size: 2.2rem;
+        color: $darkgray;
+        margin-bottom: 10px;
+    }
+    .card{
+        position: relative;
+        border-radius: 5px;
+        padding: 10px;
+        color: $ice;
+        font-size: 1.3rem;
+        span.title{
+            font-size: 1rem;
+            color: $ice;
+            top: 15px;
+            position: absolute;
+            left: 15px;
+        }
+        em.numbers{
+            font-style: normal;
+            letter-spacing: -0.1rem;
+            font-size: 5rem;
+            small{
+                font-size: 30%;
+            }
+        }
+        i.icon{
+            position: absolute;
+            opacity: 0.15;
+            font-size: 8rem;
+            top: 40px;
+            right: 60px;
+        }
+        span.link{
+            background-color: #00000030;
+            display: block;
+            margin: 10px -10px -10px;
+            padding: 5px 10px;
+            border-radius: 0px 0px 5px 5px;
+            text-align: right;        
+            a{
+                color: $ice;
+                .fas{
+                    display: inline-block;
+                    margin-left: .7rem;
+                }
+            }
+        }
+    }
 }
 .footer{
     padding: 0;

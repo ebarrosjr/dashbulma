@@ -95,6 +95,7 @@ body {
   background-color: #1a456d;
   color: #f1faee;
   height: 100%;
+  z-index: 999;
   transition: all 0.5s; }
   .sidebar.open {
     box-shadow: 2px 5px 5px #071e299c;
@@ -139,7 +140,48 @@ body {
     display: block; }
 
 .main {
-  grid-area: main; }
+  grid-area: main;
+  margin: 1.5rem; }
+  .main h3 {
+    font-size: 2.2rem;
+    color: #6d6875;
+    margin-bottom: 10px; }
+  .main .card {
+    position: relative;
+    border-radius: 5px;
+    padding: 10px;
+    color: #f1faee;
+    font-size: 1.3rem; }
+    .main .card span.title {
+      font-size: 1rem;
+      color: #f1faee;
+      top: 15px;
+      position: absolute;
+      left: 15px; }
+    .main .card em.numbers {
+      font-style: normal;
+      letter-spacing: -0.1rem;
+      font-size: 5rem; }
+      .main .card em.numbers small {
+        font-size: 30%; }
+    .main .card i.icon {
+      position: absolute;
+      opacity: 0.15;
+      font-size: 8rem;
+      top: 40px;
+      right: 60px; }
+    .main .card span.link {
+      background-color: #00000030;
+      display: block;
+      margin: 10px -10px -10px;
+      padding: 5px 10px;
+      border-radius: 0px 0px 5px 5px;
+      text-align: right; }
+      .main .card span.link a {
+        color: #f1faee; }
+        .main .card span.link a .fas {
+          display: inline-block;
+          margin-left: .7rem; }
 
 .footer {
   padding: 0;
