@@ -1,3 +1,4 @@
+![Alt text](src/img/favicon-96x96.png?raw=true "Icon")
 # DashBulma - A Bulma based dashboard admin template
 ![GitHub All Releases](https://img.shields.io/github/downloads/ebarrosjr/dashbulma/total?style=flat-square)
 ![GitHub](https://img.shields.io/github/license/ebarrosjr/dashbulma?style=flat-square)
@@ -11,6 +12,10 @@
 If you use this template, I'll be glad if you notify me about your site, just tweeting by @ebarrosjr. This will help the community to grow and make better this tamplate!
 
 Thanks for use!
+
+# Thanks for
+
+Logo (Icon) made by [Freepik](https://www.flaticon.com/authors/freepik) from [www.flaticon.com](https://www.flaticon.com/)
 
 # License
 Licensed under the [MIT License](LICENSE).

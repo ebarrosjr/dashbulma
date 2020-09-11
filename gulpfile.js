@@ -3,7 +3,7 @@ const browserSync = require('browser-sync');
 const Sass = require('gulp-sass');
 const concatCss = require('gulp-concat-css');
 const clearCss = require('gulp-clean-css');
-// const unCss = require('gulp-uncss');
+const unCss = require('gulp-uncss');
 const imagemin = require('gulp-imagemin');
 
 // Compile SASS
@@ -19,7 +19,7 @@ gulp.task('sass', gulp.parallel(() => {
 // Concat and move generated CSS file
 gulp.task('concat', gulp.series(() => {
     return gulp.src('src/css/*.css')
-               .pipe(concatCss('style.css'))
+               .pipe(concatCss('dashboard.css'))
                .pipe(clearCss({compatibility: 'ie8'}))
                /*
                .pipe(unCss({
