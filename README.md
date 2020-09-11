@@ -24,9 +24,8 @@ Thanks for use!
 
 # Thanks for
 
-Logo (Icon) made by [Freepik](https://www.flaticon.com/authors/freepik) from [www.flaticon.com](https://www.flaticon.com/)
-
-Dummy images by [PlaceHold.it](https://placeholder.com/)
+- Logo (Icon) made by [Freepik](https://www.flaticon.com/authors/freepik) from [www.flaticon.com](https://www.flaticon.com/)
+- Dummy images by [PlaceHold.it](https://placeholder.com/)
 
 # License
 Licensed under the [MIT License](LICENSE).
