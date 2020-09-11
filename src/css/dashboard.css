@@ -1,13 +1,38 @@
 /* COLORS */
-/* STYLES */
+/* LOGIN */
+body#login {
+  background: #1a456d;
+  background: linear-gradient(180deg, #1a456d 0%, #47def9 100%); }
+
+section#login-container {
+  position: absolute;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  justify-content: center; }
+  section#login-container img {
+    margin: 25px auto 0px;
+    width: 64px;
+    height: 64px; }
+
+/* DASH STYLES */
 html {
   font-size: 62.5%;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  background-color: #eeeeee; }
 
 body {
   font-size: 1.6rem Helvetica;
   height: 100vh;
   margin: 0; }
+
+h1, h2, h3, h4, h5, h6 {
+  color: black;
+  font-weight: 500; }
+
+.sr-only {
+  display: none; }
 
 .grid-container {
   display: grid;
@@ -144,7 +169,6 @@ body {
   margin: 1.5rem; }
   .main h3 {
     font-size: 2.2rem;
-    color: #6d6875;
     margin-bottom: 10px; }
   .main .card {
     position: relative;
@@ -182,6 +206,80 @@ body {
         .main .card span.link a .fas {
           display: inline-block;
           margin-left: .7rem; }
+    .main .card.has-table {
+      border-top: 2px solid #2a9d8f; }
+
+.bar-progress label {
+  color: black;
+  display: block;
+  width: 100%; }
+  .bar-progress label span.values {
+    float: right;
+    text-align: right; }
+
+.bar-progress .bar {
+  position: relative;
+  background-color: #b7b7a4;
+  height: 1.5rem;
+  width: 100%;
+  border-radius: 4px; }
+  .bar-progress .bar .bar-fill {
+    border-radius: 4px;
+    height: 1.5rem;
+    width: auto; }
+    .bar-progress .bar .bar-fill.success {
+      background-color: #2a9d8f; }
+    .bar-progress .bar .bar-fill.danger {
+      background-color: #e63946; }
+    .bar-progress .bar .bar-fill.info {
+      background-color: #90e0ef; }
+    .bar-progress .bar .bar-fill.warning {
+      background-color: #e9c46a; }
+
+table tr .actions {
+  text-align: right !important; }
+
+table .bulma-pagination ul {
+  display: inline-block;
+  margin: 5px 0px; }
+  table .bulma-pagination ul li {
+    margin: 0px;
+    display: inline-block;
+    background: #b7b7a4;
+    padding: 5px 10px;
+    border-radius: 20px; }
+    table .bulma-pagination ul li.current {
+      background-color: #2a9d8f;
+      color: #f1faee;
+      font-weight: bold; }
+    table .bulma-pagination ul li:hover {
+      background-color: #47def9; }
+
+.badge {
+  background-color: #b7b7a4;
+  color: #f1faee;
+  padding: 2px 5px 3px;
+  border-radius: 5px;
+  font-size: 1.1rem; }
+  .badge.success {
+    background-color: #2a9d8f; }
+  .badge.error {
+    background-color: #e63946; }
+  .badge.warning {
+    background-color: #f4a261; }
+  .badge.info {
+    background-color: #6d6875; }
+
+.most-viewed .product-info {
+  float: right;
+  color: #2a9d8f; }
+  .most-viewed .product-info h6 {
+    color: black; }
+  .most-viewed .product-info span#ratting {
+    display: block;
+    color: #b7b7a4; }
+    .most-viewed .product-info span#ratting i.active {
+      color: #e9c46a; }
 
 .footer {
   padding: 0;
@@ -189,7 +287,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #6d6875;
+  background-color: #1a456d;
   color: #f1faee; }
 
 @keyframes blinker {

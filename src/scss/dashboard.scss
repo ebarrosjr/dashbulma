@@ -11,16 +11,42 @@ $info: #90e0ef;
 $darkgray: #6d6875;
 $lightgray: #b7b7a4;
 $ice: #f1faee;
-
-/* STYLES */
+$bgcolor: #eeeeee;
+/* LOGIN */
+body#login{
+    background: $primary;
+    background: linear-gradient(180deg, rgba(26,69,109,1) 0%, rgba(71,222,249,1) 100%);
+}
+section#login-container{
+    position: absolute;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    img{
+        margin: 25px auto 0px;
+        width: 64px;
+        height: 64px;
+    }
+}
+/* DASH STYLES */
 html{
     font-size: 62.5%;
     box-sizing: border-box;
+    background-color: $bgcolor;
 }
 body{
     font-size: 1.6rem Helvetica;
     height: 100vh;
     margin: 0;
+}
+h1,h2,h3,h4,h5,h6{
+    color: black;
+    font-weight: 500;
+}
+.sr-only{
+    display: none;
 }
 .grid-container{
     display: grid;
@@ -179,7 +205,6 @@ body{
     margin: 1.5rem;
     h3{
         font-size: 2.2rem;
-        color: $darkgray;
         margin-bottom: 10px;
     }
     .card{
@@ -225,6 +250,107 @@ body{
                 }
             }
         }
+        &.has-table{
+            border-top: 2px solid $secondary
+        }
+    }
+}
+.bar-progress{
+    label{
+        color: black;
+        display: block;
+        width: 100%;
+        span.values{
+            float: right;
+            text-align: right;
+        }
+    }
+    .bar{
+        position: relative;
+        background-color: $lightgray;
+        height: 1.5rem;
+        width: 100%;
+        border-radius: 4px;
+        .bar-fill{
+            border-radius: 4px;
+            height: 1.5rem;
+            width: auto;
+            &.success{
+                background-color: $secondary;
+            }
+            &.danger{
+                background-color: $danger;
+            }
+            &.info{
+                background-color: $info;
+            }
+            &.warning{
+                background-color: $warning;
+            }
+        }
+    }
+}
+table {
+    tr {
+        .actions{
+            text-align: right !important;
+        }
+    }
+    .bulma-pagination{
+        ul{
+            display: inline-block;
+            margin: 5px 0px;
+            li{
+                margin: 0px;
+                display: inline-block;
+                background: $lightgray;
+                padding: 5px 10px;
+                border-radius: 20px;
+                &.current{
+                    background-color: $secondary;
+                    color: $ice;
+                    font-weight: bold;
+                }
+                &:hover{
+                    background-color: $destaque;
+                }
+            }
+        }
+    }
+}
+.badge{
+    background-color: $lightgray;
+    color: $ice;
+    padding: 2px 5px 3px;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    &.success{
+        background-color: $secondary;
+    }
+    &.error{
+        background-color: $danger;
+    }
+    &.warning{
+        background-color: $warm;
+    }
+    &.info{
+        background-color: $darkgray;
+    }
+}
+.most-viewed{
+    .product-info{
+        float: right;
+        color: $secondary;
+        h6{
+            color: black;
+        }
+        span#ratting{
+            display: block;
+            color: $lightgray;
+            i.active{
+                color: $warning;
+            }
+        }
     }
 }
 .footer{
@@ -233,7 +359,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: $darkgray;
+    background-color: $primary;
     color: $ice;
 }
 @keyframes blinker {

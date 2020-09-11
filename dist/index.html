@@ -36,8 +36,8 @@
                 <div class="inclinacao"></div>
                 <div class="links">
                     <span>Hello, Maria Clara Versiani</span>
-                    <a href="messages.html"><i class="fa fa-envelope"></i><span class="messages-count">3</span></a>
-                    <a href="/"><i class="fas fa-power-off"></i></a>
+                    <a href="messages.html"><i class="fa fa-envelope"></i><span class="messages-count">3</span><span class="sr-only">messages</span></a>
+                    <a href="/"><i class="fas fa-power-off"></i><span class="sr-only">Logout</span></a>
                 </div>
             </div>
         </header>
@@ -50,11 +50,12 @@
                     DASHBULMA
                 </h1>
                 <ul>
+                    <li><a href="index.html">Dashboard</a></li>
                     <li class="title"> Principal </li>
-                    <li><a href="">Menu #1</a></li>
+                    <li><a href="forms.html">Forms</a></li>
                     <li><a href="">Menu #2</a></li>
                     <li class="title"> Outros </li>
-                    <li><a href="">Menu #3</a></li>
+                    <li><a href="login.html">Login</a></li>
                     <li><a href="">Menu #4</a></li>
                 </ul>
             </div>
@@ -95,9 +96,168 @@
                     </div>
                 </div>
             </div>
+            <div class="columns">
+                <div class="column is-three-fifths">
+                    <div class="card has-table">
+                        <table class="table is-striped is-narrow is-hoverable is-fullwidth">
+                            <thead>
+                                <tr>
+                                    <th># ProductId</th>
+                                    <th>Last buyer</th>
+                                    <th>Status</th>
+                                    <th class="actions">Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>00001</td>
+                                    <td>Antonietta</td>
+                                    <td>Processing</td>
+                                    <td class="actions">
+                                        <a href="#"><i class="fa fa-edit has-text-info"></i><span class="sr-only">edit item</span></a>
+                                        <a href="#"><i class="fa fa-eye has-text-grey-light"></i><span class="sr-only">see information</span></span></a>
+                                        <a href="#"><i class="fa fa-trash has-text-danger"></i><span class="sr-only">delete item</span></span></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>00001</td>
+                                    <td>Antonietta</td>
+                                    <td>Processing</td>
+                                    <td class="actions">
+                                        <a href="#"><i class="fa fa-edit has-text-info"></i><span class="sr-only">edit item</span></a>
+                                        <a href="#"><i class="fa fa-eye has-text-grey-light"></i><span class="sr-only">see information</span></span></a>
+                                        <a href="#"><i class="fa fa-trash has-text-danger"></i><span class="sr-only">delete item</span></span></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>00291</td>
+                                    <td>Antonietta</td>
+                                    <td>Canceled <span class="badge error"> Due past </span></td>
+                                    <td class="actions">
+                                        <a href="#"><i class="fa fa-edit has-text-info"></i><span class="sr-only">edit item</span></a>
+                                        <a href="#"><i class="fa fa-eye has-text-grey-light"></i><span class="sr-only">see information</span></span></a>
+                                        <a href="#"><i class="fa fa-trash has-text-danger"></i><span class="sr-only">delete item</span></span></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>00411</td>
+                                    <td>Antonietta</td>
+                                    <td>Processing</td>
+                                    <td class="actions">
+                                        <a href="#"><i class="fa fa-edit has-text-info"></i><span class="sr-only">edit item</span></a>
+                                        <a href="#"><i class="fa fa-eye has-text-grey-light"></i><span class="sr-only">see information</span></span></a>
+                                        <a href="#"><i class="fa fa-trash has-text-danger"></i><span class="sr-only">delete item</span></span></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>00351</td>
+                                    <td>Antonietta</td>
+                                    <td>Payd <span class="badge warning"> Receive pending </span></td>
+                                    <td class="actions">
+                                        <a href="#"><i class="fa fa-edit has-text-info"></i><span class="sr-only">edit item</span></a>
+                                        <a href="#"><i class="fa fa-eye has-text-grey-light"></i><span class="sr-only">see information</span></span></a>
+                                        <a href="#"><i class="fa fa-trash has-text-danger"></i><span class="sr-only">delete item</span></span></a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <td colspan="4" class="bulma-pagination">
+                                        <ul>
+                                            <li class="prev"> < </li>
+                                            <li>2</li>
+                                            <li class="current">3</li>
+                                            <li>4</li>
+                                            <li class="next"> > </li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="card most-viewed">
+                        <h5>Most viewed products</h5>
+                        <ul>
+                            <li>
+                                <img src="https://placehold.it/64x64" alt="prod">
+                                <div class="product-info">
+                                    <h6>Product #ASD0987</h6>
+                                    <i class="fa fa-eye"></i> 600
+                                    <span id="ratting">
+                                        <i class="fa fa-star active"></i>
+                                        <i class="fa fa-star active"></i>
+                                        <i class="fa fa-star active"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </span>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="https://placehold.it/64x64" alt="prod">
+                                <div class="product-info">
+                                    <h6>Product #ASD0987</h6>
+                                    <i class="fa fa-eye"></i> 600
+                                    <span id="ratting">
+                                        <i class="fa fa-star active"></i>
+                                        <i class="fa fa-star active"></i>
+                                        <i class="fa fa-star active"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </span>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="https://placehold.it/64x64" alt="prod">
+                                <div class="product-info">
+                                    <h6>Product #ASD0987</h6>
+                                    <i class="fa fa-eye"></i> 600
+                                    <span id="ratting">
+                                        <i class="fa fa-star active"></i>
+                                        <i class="fa fa-star active"></i>
+                                        <i class="fa fa-star active"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="card">
+                        <h5>Goals</h5>
+                        <div class="bar-progress">
+                            <label>Conversion <span class="values">200/250</span></label>
+                            <div class="bar">
+                                <div class="bar-fill success" style="width:80%"></div>
+                            </div>
+                        </div>
+                        <div class="bar-progress">
+                            <label>Cart abandon <span class="values">60/300</span></label>
+                            <div class="bar">
+                                <div class="bar-fill danger" style="width:20%"></div>
+                            </div>
+                        </div>
+                        <div class="bar-progress">
+                            <label>Delayed delivery <span class="values">98/200</span></label>
+                            <div class="bar">
+                                <div class="bar-fill warning" style="width:46%"></div>
+                            </div>
+                        </div>
+                        <div class="bar-progress">
+                            <label>Alcance <span class="values">72/100</span></label>
+                            <div class="bar">
+                                <div class="bar-fill info" style="width:72%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </main>
         <footer class="footer">
-            FOOTER
+            Copyright &copy; 2020 &bull; Everton C B Junior
         </footer>
     </div>
     <script src="js/scripts.js"></script>
