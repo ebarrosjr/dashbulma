@@ -2,6 +2,8 @@ const gulp = require('gulp');
 const browserSync = require('browser-sync');
 const Sass = require('gulp-sass');
 const concatCss = require('gulp-concat-css');
+const minifyJs = require('gulp-uglify');
+const sourceMaps = require('gulp-sourcemaps');
 const clearCss = require('gulp-clean-css');
 const unCss = require('gulp-uncss');
 const imagemin = require('gulp-imagemin');
@@ -19,18 +21,21 @@ gulp.task('sass', gulp.parallel(() => {
 // Concat and move generated CSS file
 gulp.task('concat', gulp.series(() => {
     return gulp.src('src/css/*.css')
-               .pipe(concatCss('dashboard.css'))
-               .pipe(clearCss({compatibility: 'ie8'}))
-               .pipe(unCss({
-                   html: ['src/*.html']
-               }))
-               .pipe(gulp.dest('dist/css/'));
+        .pipe(concatCss('dashboard.css'))
+        .pipe(clearCss({compatibility: 'ie8'}))
+        .pipe(unCss({
+            html: ['src/*.html']
+        }))
+        .pipe(gulp.dest('dist/css/'));
 }));
 // Move JS files
 gulp.task('js', gulp.parallel(() => {
     return gulp.src([
         'src/js/*.js'
     ])
+    .pipe(sourceMaps.init())
+    .pipe(minifyJs())
+    .pipe(sourceMaps.write('.'))
     .pipe(gulp.dest('dist/js'))
     .pipe(browserSync.stream());
 }));
