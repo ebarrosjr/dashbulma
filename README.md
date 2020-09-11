@@ -1,4 +1,4 @@
-<p slign="center">
+<p align="center">
     <img src="src/img/favicon-96x96.png?raw=true" alt="LOGO" />
 </p>
 # DashBulma
