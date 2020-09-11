@@ -111,6 +111,7 @@ body{
     background: #47def9;
 }
 .sidebar{
+    padding-left: 10px;
     position: fixed;
     transform: translateX(-20rem);
     width:20rem;
@@ -135,6 +136,41 @@ body{
         &:focus{
             outline: unset;
         }     
+    }
+    h1{
+        width: 80%;
+        border: 1px solid #fff;
+        text-align: center;
+        border-radius: 10px;
+        margin: 5px 0px 10px;
+        padding: 5px 0px;
+        img {
+            display: block;
+            margin: 0px auto;
+        }
+    }
+    .title{
+        background-color: #90e0ef;
+        font-size: 1.5rem;
+        padding: 5px;
+        border-radius: 5px 0px 0px 5px;
+        color: #1a456c;
+        font-weight: 400;  
+        margin: 1.5rem 0rem;      
+        border-right: 5px solid $secondary;
+        &:first-of-type{
+            margin-top: 20px;
+        }
+    }
+    ul{
+        li{
+            a{
+                margin: 5px 0px;
+                font-size: 1.5rem;
+                color: $ice;
+                display: block;
+            }
+        }
     }
 }
 .main{
