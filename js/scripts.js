@@ -1,6 +1,2 @@
-function openMenu(){
-    document.querySelector(".sidebar").classList.add("open");
-}
-function closeMenu(){
-    document.querySelector(".sidebar").classList.remove("open");
-}
+function openMenu(){document.querySelector(".sidebar").classList.add("open")}function closeMenu(){document.querySelector(".sidebar").classList.remove("open")}
+//# sourceMappingURL=scripts.js.map
