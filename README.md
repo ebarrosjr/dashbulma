@@ -1,5 +1,8 @@
+<p slign="center">
 ![Alt text](src/img/favicon-96x96.png?raw=true "Icon")
-# DashBulma - A Bulma based dashboard admin template
+</p>
+# DashBulma
+## A Bulma based dashboard admin template
 ![GitHub All Releases](https://img.shields.io/github/downloads/ebarrosjr/dashbulma/total?style=flat-square)
 ![GitHub](https://img.shields.io/github/license/ebarrosjr/dashbulma?style=flat-square)
 [![GitHub issues](https://img.shields.io/github/issues/ebarrosjr/dashbulma?style=flat-square)](https://github.com/ebarrosjr/dashbulma/issues)
