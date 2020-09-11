@@ -1,5 +1,5 @@
 <p slign="center">
-![Alt text](src/img/favicon-96x96.png?raw=true "Icon")
+    <img src="src/img/favicon-96x96.png?raw=true" alt="LOGO" />
 </p>
 # DashBulma
 ## A Bulma based dashboard admin template
